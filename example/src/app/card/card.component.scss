@@ -1,0 +1,16 @@
+.card{
+    height: 100px;
+    background-color: #333;
+    border-radius: 10px;
+    color: #fff;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h2{
+    margin: 0;
+    padding: 0;
+}

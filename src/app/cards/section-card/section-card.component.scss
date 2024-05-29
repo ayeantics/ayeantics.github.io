@@ -1,0 +1,102 @@
+.cards-container {
+  margin-top: 100px;
+  display: flex;
+  font-family: "Noto Sans Georgian", sans-serif;
+
+  .top-cards-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    .card {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      background-color: #f6f5fa;
+      border-radius: 16px;
+      width: 480px;
+      height: 100%;
+      gap: 20px;
+      padding: 40px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1),
+        0 6px 20px 0 rgba(0, 0, 0, 0.09);
+
+      .card-header {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: 20px;
+
+        .header-text {
+          font-family: "FiraGO", sans-serif !important;
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+
+          h3 {
+            font-size: 22px;
+            font-weight: 400;
+          }
+          h1 {
+            font-size: 22px;
+            font-weight: bold;
+          }
+        }
+
+        i {
+          font-size: 20px;
+          background-color: #3786ed;
+          padding: 20px;
+          border-radius: 50%;
+          display: flex;
+          color: #fff;
+        }
+      }
+
+      p {
+        width: 100%;
+        opacity: 0.8;
+        font-size: 12px;
+        font-weight: 400;
+        color: rgb(9, 24, 38);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 6;
+        -webkit-box-orient: vertical;
+      }
+
+      .card-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background-color: #091826;
+        align-self: flex-end;
+        margin-top: 10px;
+        color: #fff;
+        padding: 15px 30px;
+        border-radius: 21px;
+        font-size: 16px;
+        font-weight: 800;
+        text-decoration: none;
+        position: relative;
+        cursor: pointer;
+
+        span {
+          opacity: 0;
+          width: 0;
+          transition: all 0.2s ease-in-out;
+        }
+
+        &:hover span {
+          opacity: 100;
+          position: relative;
+          width: 100px;
+        }
+      }
+    }
+  }
+}
+

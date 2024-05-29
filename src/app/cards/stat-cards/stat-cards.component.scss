@@ -1,0 +1,58 @@
+* {
+    font-family: "Noto Sans Georgian", sans-serif;
+  }
+  
+  .stats-card {
+    display: flex;
+    gap: 10px;
+  
+    .card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 10px;
+      width: 200px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
+  
+      i {
+        font-size: 20px;
+        background-color: pink;
+        padding: 8px;
+        border-radius: 50%;
+        display: flex;
+        color: #fff;
+        background-color: #F8B857;
+      }
+      
+      .postcard-green {
+          background-color: #8BD091;
+      }
+  
+      h5 {
+        font-size: 12px;
+        font-weight: 400;
+        color: #09182680;
+      }
+      p {
+        font-size: 24px;
+        font-weight: 700;
+      }
+    }
+    .left-card {
+      background-color: #091826;
+      color: #fff;
+      width: 250px;
+  
+      h5 {
+          color: #ffffff80;
+      }
+  
+      i {
+          background-color: #fff;
+          color: #091826;
+      }
+    }
+  }
+  

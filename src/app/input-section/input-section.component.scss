@@ -1,0 +1,132 @@
+.input-section {
+  background: rgb(198, 239, 223);
+  background: linear-gradient(
+    180deg,
+    rgba(198, 239, 223, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  h3 {
+    font-size: 48px;
+    font-weight: 200;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  .input-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    background: #fff;
+    border-radius: 16px;
+    min-width: 710px;
+    padding: 20px;
+    margin: 60px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
+
+    h5 {
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.1px;
+    }
+    p {
+      font-size: 13px;
+      color: #5c6975;
+    }
+
+    .input-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      margin-top: 15px;
+
+      .search-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #6e55bf;
+        border: none;
+        padding: 15px 40px;
+        font-size: 18px;
+        border-radius: 34px;
+        color: #fff;
+        position: relative;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        &:hover .search-text {
+          visibility: visible;
+        }
+
+        .search-text {
+          position: absolute;
+          top: 54px;
+          background-color: #091826;
+          color: #ccc;
+          padding: 10px;
+          font-size: 14px;
+          visibility: hidden;
+        }
+      }
+
+      .search-form {
+        display: flex;
+        border: 2px solid #6e55bf;
+        border-radius: 34px;
+        width: 850px;
+        height: 70px;
+        overflow: hidden;
+
+        .region-button {
+          width: 55%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 20px;
+          font-size: 16px;
+          font-weight: 600;
+          background-color: transparent;
+          border: none;
+          height: 100%;
+
+          i {
+            margin-top: 5px;
+          }
+        }
+        input {
+          width: 100%;
+          padding: 0 20px;
+          border: none;
+          outline: none;
+          cursor: pointer;
+
+          &::placeholder {
+            font-size: 16px;
+          }
+
+          &:focus {
+            background-color: #6e55bf0d;
+          }
+        }
+      }
+
+      label,
+      #terms {
+        font-size: 14px;
+        color: #5c6975;
+      }
+    }
+  }
+}

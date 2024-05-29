@@ -1,0 +1,4 @@
+<!-- ეს შეამოწმებს currencies შიგნით არის თუ არა რამე -->
+<ng-container *ngIf="currencies">
+  <app-card [currency]="curr" *ngFor="let curr of currencies.data"></app-card>
+</ng-container>

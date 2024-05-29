@@ -1,0 +1,31 @@
+<ng-container *ngIf="schoolCount">
+    <div class="stats-card">
+        <div class="card left-card">
+            <div class="left-side">
+                <h5>სკოლების რაოდენობა</h5>
+                <p>{{schoolCount.schoolCount}}</p>
+            </div>
+            <div class="right-side">
+                <i class="bi bi-map-fill"></i>
+            </div>
+        </div>
+        <div class="card">
+            <div class="left-side">
+                <h5>კერძო სკოლა</h5>
+                <p>{{schoolCount.privateSchoolCount}}</p>
+            </div>
+            <div class="right-side">
+                <i class="bi bi-postcard-fill"></i>
+            </div>
+        </div>
+        <div class="card">
+            <div class="left-side">
+                <h5>საჯარო სკოლა</h5>
+                <p>{{schoolCount.publicSchoolCount}}</p>
+            </div>
+            <div class="right-side">
+                <i class="bi bi-postcard-fill postcard-green"></i>
+            </div>
+        </div>
+    </div>
+</ng-container>
